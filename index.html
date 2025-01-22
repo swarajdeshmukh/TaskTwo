@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main">
+            <!-- container one  -->
+     
+    <div id="content1" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h3 id="totalDivCount1"></h3>
+        <!-- subDiv  -->
+        <div draggable="true" class="subdiv" ondragstart="drag(event)">task 1</div>
+        <div draggable="true" class="subdiv" ondragstart="drag(event)">task 2</div>
+        <div draggable="true" class="subdiv" ondragstart="drag(event)">task 3</div>
+        <div draggable="true" class="subdiv" ondragstart="drag(event)">task 4</div>
+        <div draggable="true" class="subdiv" ondragstart="drag(event)">task 5</div>
+        <!-- 
+        <button id="createButton" class="btn" onclick="addDivElement()">creat</button> -->
+
+    </div>
+
+    <!-- container two  -->
+    <div id="content2" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+        <h3 id="totalDivCount2"></h3>
+    </div>
+    </div>
+    <div id="taskListContainer">
+        <div id="content3">
+
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
